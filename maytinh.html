@@ -4,68 +4,75 @@
     <meta charset="UTF-8">
     <title>làm máy tính đơn giản</title>
 </head>
+<style>
+    table{
+        border: 2px solid black ;
+    }
+</style>
 <body>
+<form >
    <table>
      <tr>
          <td colspan="4"><input id="result"/> </td>
      </tr>
       <tr>
           <td>
-              <button id="1" giatricuatoi ="1" onclick ="inputdata(this)">1</button>
+              <button type="button" id="1" giatricuatoi ="1" onclick ="inputdata(this)">1</button>
           </td>
           <td>
-              <button id="2" onclick ="inputdata(this)">2</button>
+              <button type="button" id="2" onclick ="inputdata(this)">2</button>
           </td>
           <td>
-              <button id="3" onclick ="inputdata(this)">3</button>
+              <button type="button" id="3" onclick ="inputdata(this)">3</button>
           </td>
           <td>
-              <button id="+" onclick ="inputOperation(this)">+</button>
+              <button type="button" id="+" onclick ="inputOperation(this)">+</button>
           </td>
       </tr>
        <tr>
            <td>
-               <button id="4" onclick ="inputdata(this)">4</button>
+               <button type="button" id="4" onclick ="inputdata(this)">4</button>
            </td>
            <td>
-               <button id="5" onclick ="inputdata(this)">5</button>
+               <button type="button" id="5" onclick ="inputdata(this)">5</button>
            </td>
            <td>
-               <button id="6" onclick ="inputdata(this)">6</button>
+               <button type="button" id="6" onclick ="inputdata(this)">6</button>
            </td>
            <td>
-               <button id="-" onclick ="inputOperation(this)">-</button>
-           </td>
-       </tr>
-       <tr>
-           <td>
-               <button id="7" onclick ="inputdata(this)">7</button>
-           </td>
-           <td>
-               <button id="8" onclick ="inputdata(this)">8</button>
-           </td>
-           <td>
-               <button id="9" onclick ="inputdata(this)">9</button>
-           </td>
-           <td>
-               <button id="*" onclick ="inputOperation(this)">*</button>
+               <button type="button" id="-" onclick ="inputOperation(this)">-</button>
            </td>
        </tr>
        <tr>
            <td>
-               <button id="C" onclick ="clearData()">C</button>
+               <button type="button" id="7" onclick ="inputdata(this)">7</button>
            </td>
            <td>
-               <button id="0" onclick ="inputdata(this)">0</button>
+               <button type="button" id="8" onclick ="inputdata(this)">8</button>
            </td>
            <td>
-               <button id="=" onclick="getResult()" >=</button>
+               <button type="button" id="9" onclick ="inputdata(this)">9</button>
            </td>
            <td>
-               <button id="/" onclick ="inputOperation(this)">/</button>
+               <button type="button" id="*" onclick ="inputOperation(this)">*</button>
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <button type="button" id="C" onclick ="clearData()">C</button>
+           </td>
+           <td>
+               <button type="button"id="0" onclick ="inputdata(this)">0</button>
+           </td>
+           <td>
+               <button type="button" id="=" onclick="getResult()" >=</button>
+           </td>
+           <td>
+               <button type="button" id="/" onclick ="inputOperation(this)">/</button>
            </td>
        </tr>
    </table>
+</form>
    <script>
        function inputdata(element) {
            let data = element.innerHTML;
